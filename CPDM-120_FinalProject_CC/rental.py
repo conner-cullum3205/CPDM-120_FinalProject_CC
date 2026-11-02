@@ -11,3 +11,14 @@ class Rental:
         Rental.next_ID += 1
 
         self.is_closed = False  # Initialize the rental as open
+
+    def display(self):
+        print(f"Rental ID: {self.rental_id}")
+        print(f"Customer ID: {self.customer_id}")
+        print(f"Skis Rented: {self.skis_rented}")
+        print(f"Snowboards Rented: {self.snowboards_rented}")
+        print(f"Rental Duration: {self.rental_duration} days")
+        if self.is_closed:
+            print("Rental Status: Closed")
+        else:
+            print("Rental Status: Open")
