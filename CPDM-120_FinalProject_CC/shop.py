@@ -3,18 +3,18 @@ from customer import Customer
 
 class Shop:
 
-    def __init__(self, num_skis, num_snowboards, customer_list, rental_list, total_income):
+    def __init__(self, num_skis = 10, num_snowboards = 10, customer_list = [], rental_list = [], total_income = 0):
         self.num_skis = num_skis
         self.num_snowboards = num_snowboards
         self.customer_list = customer_list
         self.rental_list = rental_list
         self.total_income = total_income
 
-        setup_inventory(num_skis, num_snowboards)
+        self.setup_inventory(num_skis, num_snowboards)
 
-    def find_customer(self, customer_id):
+    def find_customer(self, customer_ID):
         for customer in self.customer_list:
-            if customer.customer_id == customer_id:
+            if customer.customer_ID == customer_ID:
                 return customer
         return None
 
