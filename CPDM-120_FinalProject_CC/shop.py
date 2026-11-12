@@ -57,7 +57,7 @@ class Shop:
         rental.is_closed = True
         self.num_skis += rental.skis_rented
         self.num_snowboards += rental.snowboards_rented
-        income = (rental.skis_rented + rental.snowboards_rented) * rental.rental_duration * 10  # Assuming $10 per day per item
+        income = ((rental.skis_rented * 15) + (rental.snowboards_rented * 10)) * rental.rental_duration
         self.total_income += income
         print(f"Rental completed. Total income from this rental: ${income}")
 
