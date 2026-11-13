@@ -29,7 +29,7 @@ while continue_loop:
         new_customer = shop_one.add_customer(last_name, phone_number)
         print(f"Customer added with ID: {new_customer.customer_ID}")
     elif user_choice == '2':
-        customer_id = int(input("\nEnter the customer ID: "))
+        customer_id = int(input("Enter the customer ID: "))
         customer = shop_one.find_customer(customer_id)
         if customer:
             customer.display()
@@ -56,7 +56,7 @@ while continue_loop:
             last_name = input("Enter the customer's last name: ")
             phone_number = input("Enter the customer's phone number: ")
             new_customer = shop_one.add_customer(last_name, phone_number)
-            customer_id = new_customer.ID_number
+            customer_id = new_customer.customer_ID
         num_skis = int(input("Enter the number of skis to rent: "))
         num_snowboards = int(input("Enter the number of snowboards to rent: "))
         rental_duration = int(input("Enter the rental duration in hours: "))
