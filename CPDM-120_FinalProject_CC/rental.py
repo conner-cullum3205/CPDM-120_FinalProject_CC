@@ -17,7 +17,7 @@ class Rental:
         print(f"Customer ID: {self.customer_id}")
         print(f"Skis Rented: {self.skis_rented}")
         print(f"Snowboards Rented: {self.snowboards_rented}")
-        print(f"Rental Duration: {self.rental_duration} days")
+        print(f"Rental Duration: {self.rental_duration} hours")
         if self.is_closed:
             print("Rental Status: Closed")
         else:
